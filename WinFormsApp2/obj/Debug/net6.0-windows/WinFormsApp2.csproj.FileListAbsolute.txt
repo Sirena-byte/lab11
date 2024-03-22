@@ -16,3 +16,6 @@ C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\Wi
 C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.genruntimeconfig.cache
 C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\obj\Debug\net6.0-windows\ref\WinFormsApp2.dll
 C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.Properties.Resources.resources
+C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\bin\Debug\net6.0-windows\MySql.Data.xml
+C:\Users\ionya\OneDrive\Рабочий стол\7 сем\windiws\WinFormsApp2\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.CopyComplete

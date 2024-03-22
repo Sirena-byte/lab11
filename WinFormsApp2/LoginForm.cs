@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExempleSQLApp2;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +47,36 @@ namespace WinFormsApp2
         private void LoginForm_MouseDown(object sender, MouseEventArgs e)//при нажатии мыши(запоминаются текущие ккоординаты)
         {
             lastPoint = new Point(e.X, e.Y);//устанавливаем координаты
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            //получили данные от пользователя
+            String loginUser = loginField.Text;
+            String passUser = passField.Text;
+
+            DB db = new DB();
+
+            DataTable table = new DataTable();//объект что-то вроде массива или таблицы для работы с данными
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL AND `password` = @uP",db.getConnection());
+            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
+            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if(table.Rows.Count > 0)
+            {
+                MessageBox.Show("Yes");
+            }
+            else
+            {
+                MessageBox.Show("No");
+            }
+
         }
     }
 }
